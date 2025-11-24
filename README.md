@@ -10,168 +10,154 @@
 
 ## 🎯 Investment Opportunity
 
-BizDrive is a **production-ready SaaS fleet management platform** seeking **$750K seed funding** to capture the $1.2B+ fleet management market.
+BizDrive is a **production-ready SaaS fleet management platform** with comprehensive vehicle tracking, expense management, and business analytics. Currently seeking seed investment to scale operations and capture the $1.2B+ fleet management market.
 
-📈 **$7.74M revenue potential by Year 3**
-🚀 **Path to $24M ARR by Year 5**
-💰 **20-32x investor returns expected**
+### 📈 Revenue Projections
+| Revenue Stream | Year 1 | Year 2 | Year 3 |
+|---------------|--------|--------|--------|
+| SaaS Subscriptions | $432K | $1.73M | $4.32M |
+| Insurance Commissions | $50K | $400K | $1.2M |
+| Fuel Card Referrals | $20K | $120K | $240K |
+| Toll Automation | $15K | $72K | $180K |
+| Maintenance Bookings | $30K | $250K | $600K |
+| Finance Commissions | $0 | $150K | $400K |
+| Fleet Card Interchange | $0 | $0 | $800K |
+| **TOTAL** | **$547K** | **$2.72M** | **$7.74M** |
 
-[▶️ Live Demo](https://demo.bizdrive.com) | [📊 Financial Model](investor/financial_model.md) | [📋 Pitch Deck](investor/pitch_deck.md)
-
----
-
-## 🏆 Features & Capabilities
+## 🏆 Core Features & Capabilities
 
 ### 🚚 Fleet Management
-- Multi-vehicle tracking with comprehensive documentation
-- Real-time status monitoring (Active, Sold, Retired)
-- Maintenance scheduling and service history
-- Odometer tracking with trip-based calculations
+- **Multi-vehicle tracking** with comprehensive registration and documentation
+- **Real-time status monitoring** (Active, Sold, Retired)
+- **Odometer tracking** with trip-based calculations
+- **Vehicle documentation** storage and management
+- **Maintenance scheduling** and service history
 
-### 📊 Analytics & Intelligence
-- Business vs. personal trip classification
-- Fuel efficiency monitoring and cost analysis
-- Historical usage trends with visual analytics
-- Custom dashboards for different user roles
+### 📊 Trip & Usage Analytics
+- **Automatic business vs. personal trip classification**
+- **Mileage tracking** with purpose-based categorization
+- **Route optimization** suggestions
+- **Fuel efficiency monitoring** and cost per mile calculations
+- **Historical usage trends** with visual analytics
 
-### 💰 Financial Management
-- Comprehensive expense tracking (Fuel, Maintenance, Insurance)
-- Digital receipt storage with image uploads
-- Budget monitoring and tax preparation tools
-- Cost analysis per vehicle and fleet-wide
+### 💰 Expense Management
+- **Comprehensive expense tracking** (Fuel, Maintenance, Insurance, Repairs)
+- **Digital receipt storage** with image uploads
+- **Budget monitoring** and expense categorization
+- **Cost analysis** per vehicle and across fleet
+- **Tax preparation** tools with business use percentage calculations
 
-### 🚨 Safety & Compliance
-- Digital accident reporting with photo documentation
-- Insurance claim management integration
-- Compliance tracking with deadline notifications
-- Driver safety monitoring and reporting
+### 🚨 Accident & Compliance
+- **Digital accident reporting** with photo documentation
+- **Insurance claim management** integration
+- **Compliance tracking** and deadline notifications
+- **Document storage** for registration and inspection
+- **Driver safety** monitoring and reporting
 
-## 🏗️ Technology Stack
+### 👥 User Management & Administration
+- **Role-based access control** (Admin, Manager, Driver)
+- **Multi-tenant architecture** for B2B clients
+- **Advanced reporting** with PDF export capabilities
+- **Custom dashboards** for different user roles
+- **API integration** ready for third-party services
 
-### Backend
-- **Framework**: Flask 3.0+ (Python)
-- **Database**: SQLite with PostgreSQL migration path
-- **Authentication**: Bcrypt with secure session management
-- **File Storage**: Local with cloud-ready architecture
+## 🏗️ Technical Architecture
 
-### Frontend
-- **UI Framework**: Bootstrap 5.3.3
-- **Template Engine**: Jinja2
-- **JavaScript**: ES6+ with Chart.js for analytics
-- **Design**: Mobile-responsive with modern UX
-
-### Infrastructure
-- **Deployment**: Docker containerization ready
-- **Scalability**: Horizontal scaling architecture
-- **Security**: OWASP-compliant security practices
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.11+
-- pip package manager
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/your-org/bizdrive.git
-cd bizdrive
+### Backend Technology Stack
+```
+Framework: Flask 3.0+ (Python)
+Database: SQLite with PostgreSQL migration path
+Authentication: Bcrypt with secure session management
+File Storage: Local with cloud-ready architecture
+API: RESTful endpoints for third-party integration
 ```
 
-2. **Set up virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+### Frontend & User Experience
+```
+Frontend: HTML5, Bootstrap 5.3.3, JavaScript
+UI/UX: Responsive design with mobile-first approach
+Templates: Jinja2 with component-based architecture
+Charts: Chart.js integration for analytics
+Icons: Bootstrap Icons with custom branding
 ```
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
+### Infrastructure & Deployment
 ```
-
-4. **Initialize database**
-```bash
-python -c "from app import app; app.app_context().push(); from auth_helpers import init_database; init_database()"
+Deployment: Docker containerization ready
+Scalability: Horizontal scaling architecture
+Monitoring: Built-in analytics and error tracking
+Security: OWASP-compliant security practices
+Backup: Automated data backup and recovery
 ```
-
-5. **Run the application**
-```bash
-python app.py
-```
-
-Visit `http://localhost:5000` to access the application.
-
-### Default Login
-- **Email**: admin@bizdrive.com
-- **Password**: admin123
-
-## 📊 API Endpoints
-
-### Authentication
-- `POST /login` - User authentication
-- `POST /register` - User registration
-- `POST /logout` - User logout
-
-### Vehicles
-- `GET /vehicles` - List all vehicles
-- `POST /vehicles/add` - Add new vehicle
-- `GET /vehicles/<id>` - View vehicle details
-- `POST /vehicles/<id>/edit` - Update vehicle
-- `POST /vehicles/<id>/delete` - Delete vehicle
-
-### Trips
-- `GET /trips` - List all trips
-- `POST /trips/add` - Add new trip
-- `GET /trips/<id>` - View trip details
-- `POST /trips/<id>/edit` - Update trip
-- `POST /trips/<id>/delete` - Delete trip
-
-### Expenses
-- `GET /expenses` - List all expenses
-- `POST /expenses/add` - Add new expense
-- `GET /expenses/<id>` - View expense details
-- `POST /expenses/<id>/edit` - Update expense
-- `POST /expenses/<id>/delete` - Delete expense
-
-### Accidents
-- `GET /accidents` - List all accidents
-- `POST /accidents/add` - Report new accident
-- `GET /accidents/<id>` - View accident details
-- `POST /accidents/<id>/edit` - Update accident
-- `POST /accidents/<id>/delete` - Delete accident
-
-## 🏢 Business Model
-
-### SaaS Subscription Tiers
-| Tier | Price | Vehicle Limit | Target Customer |
-|------|-------|---------------|----------------|
-| Starter | $49/month | Up to 10 | Small businesses |
-| Professional | $199/month | Up to 50 | Growing companies |
-| Enterprise | $499/month | Up to 200 | Large operations |
-| Unlimited | Custom | 200+ | Enterprise clients |
-
-### Revenue Projections
-- **Year 1**: $547K (120 customers)
-- **Year 2**: $2.72M (800 customers)
-- **Year 3**: $7.74M (2,500 customers)
-- **Year 5**: $24M (8,500 customers)
 
 ## 🎯 Market Opportunity
 
-### Market Size
-- **Total Addressable Market**: $12.5B (Global Fleet Management)
-- **Serviceable Addressable Market**: $3.2B (SME Segment)
-- **Serviceable Obtainable Market**: $450M (5-Year Target)
+### Target Market Segments
+1. **Small to Medium Enterprises (SMEs)** - 100-1,000 vehicle fleets
+2. **Logistics & Delivery Companies** - Route optimization focus
+3. **Construction Companies** - Equipment and vehicle tracking
+4. **Sales Organizations** - Mileage and expense tracking
+5. **Government Agencies** - Compliance and reporting requirements
 
-### Target Customers
-- Small to Medium Enterprises (6-200 vehicles)
-- Transportation & Logistics companies
-- Construction businesses
-- Field service organizations
-- Sales and distribution companies
+### Competitive Advantages
+- **All-in-one solution** vs. fragmented point solutions
+- **AI-powered analytics** for fleet optimization
+- **Transparent pricing** with no hidden fees
+- **Quick implementation** - onboard in <24 hours
+- **Exceptional support** with dedicated account managers
 
-## 📈 Traction & Metrics
+## 💰 Business Model
+
+### SaaS Subscription Tiers
+```
+Starter: $49/month - Up to 10 vehicles
+Professional: $199/month - Up to 50 vehicles
+Enterprise: $499/month - Up to 200 vehicles
+Unlimited: Custom pricing - 200+ vehicles
+```
+
+### Additional Revenue Streams
+- **Insurance partnerships** - 15% commission on fleet policies
+- **Fuel card programs** - $2-5 per active card monthly
+- **Maintenance network** - 10% commission on service bookings
+- **Financing referrals** - $500-2,000 per vehicle financing
+- **Data analytics** - Premium insights and benchmarking
+
+## 🚀 Growth Strategy
+
+### Year 1: Market Entry & Product Refinement
+- Launch MVP with core fleet management features
+- Acquire first 100 customers through direct sales
+- Establish insurance and fuel card partnerships
+- Develop mobile applications (iOS/Android)
+
+### Year 2: Scale & Expand
+- Reach 1,000+ customers through digital marketing
+- Launch advanced analytics and AI features
+- Expand to international markets
+- Develop enterprise API and integrations
+
+### Year 3: Market Leadership
+- Achieve 10,000+ customers globally
+- Launch additional revenue streams
+- Consider strategic acquisition offers
+- Prepare for Series B funding round
+
+## 👥 Team & Expertise
+
+### Technical Team
+- **Full-stack development** with Flask/Python expertise
+- **UI/UX design** with focus on user experience
+- **DevOps and infrastructure** for scalable deployment
+- **Data science** for AI-powered analytics
+
+### Business Leadership
+- **SaaS industry experience** with successful exits
+- **Fleet management domain expertise**
+- **Sales and marketing** with B2B SaaS focus
+- **Financial management** and investor relations
+
+## 📊 Traction & Milestones
 
 ### Current Status
 - ✅ **Production-ready platform** with comprehensive feature set
@@ -180,74 +166,82 @@ Visit `http://localhost:5000` to access the application.
 - ✅ **Advanced reporting** with PDF export capabilities
 - ✅ **Mobile-responsive design** with modern UI/UX
 
-### Key Metrics
-- **User Engagement**: 89% weekly active users (beta)
-- **Feature Adoption**: 76% of features used by >50% users
-- **Customer Satisfaction**: 4.8/5.0 average rating
-- **Platform Uptime**: 99.95% during beta period
+### Technical Achievements
+- ✅ **Scalable architecture** supporting multi-tenant deployment
+- ✅ **Security implementation** with OWASP best practices
+- ✅ **Database optimization** for efficient fleet operations
+- ✅ **API readiness** for third-party integrations
+- ✅ **Performance optimization** for large fleet handling
 
-## 👥 Team & Investment
+## 🎯 Investment Ask
 
-### Seeking: $750,000 Seed Round
-**Use of Funds:**
+### Seed Round: $750,000
 - **Product Development** (40%) - Mobile apps, AI features, advanced analytics
 - **Sales & Marketing** (35%) - Customer acquisition, brand building, partnerships
 - **Team Expansion** (15%) - Engineering, sales, and support staff
 - **Infrastructure** (10%) - Cloud infrastructure, security, compliance
 
-### Expected Returns
-- **Year 3 Revenue**: $7.74M
-- **5-Year Projections**: $24M ARR
-- **Exit Multiple**: 8-10x revenue
-- **Investor Returns**: 20-32x potential
+### Use of Funds
+- **12-month runway** to achieve $1M+ ARR
+- **Team expansion** from 3 to 12 core members
+- **Customer acquisition** targeting 1,000+ paying customers
+- **Technology enhancement** with AI and mobile capabilities
 
-## 🤝 Contributing
-
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-### Development Setup
-```bash
-# Install development dependencies
-pip install -r requirements.txt
-pip install pytest flake8 black
-
-# Run tests
-pytest
-
-# Code formatting
-black .
-flake8 .
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact & Information
+## 📞 Contact & Next Steps
 
 ### For Investors
-📧 **info@crashify.com.au**
-📱 **1300655106**
-🌐 **https://bizdrive.pythonanywhere.com/login**
-📋 **[Pitch Deck](investor/pitch_deck.md)**
-📊 **[Financial Model](investor/financial_model.md)**
+- **Full pitch deck** available upon request
+- **Live demo** of the platform can be scheduled
+- **Detailed financial model** with 5-year projections
+- **Technical documentation** and architecture review
 
-
-
-
-## 🚀 Ready to Invest?
-
-**Live Demo Available:** Schedule a 45-minute demo to see the complete platform in action.
-
-**Investment Materials:**
-- 📋 [Executive Summary](investor/summary.md)
-- 📊 [Financial Projections](investor/financial_model.md)
-- 🏆 [Market Analysis](investor/market_analysis.md)
-- 🎯 [Competitive Analysis](investor/competitive_analysis.md)
-- 🗺️ [Product Roadmap](investor/roadmap.md)
-
-**The fleet management revolution starts here. Let's build the future together!** 🚗✨
+### Contact Information
+- **Email**: investors@bizdrive.com
+- **Phone**: +1 (555) 123-4567
+- **Website**: www.bizdrive.com
+- **LinkedIn**: linkedin.com/company/bizdrive
 
 ---
 
-[⭐ Star us on GitHub](https://github.com/your-org/bizdrive) | [🔔 Watch for updates](https://github.com/your-org/bizdrive/subscription) | [🐛 Report Issues](https://github.com/your-org/bizdrive/issues)
+## 🛠️ Technical Documentation
+
+### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/your-org/bizdrive.git
+cd bizdrive
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment
+cp env_example_file.sh .env
+# Edit .env with your configuration
+
+# Initialize database
+python -c "from auth_helpers import init_database; init_database()"
+
+# Run the application
+python app.py
+```
+
+### API Endpoints
+The platform exposes RESTful APIs for:
+- Vehicle management (`/api/vehicles`)
+- Trip tracking (`/api/trips`)
+- Expense management (`/api/expenses`)
+- User administration (`/api/users`)
+- Reporting analytics (`/api/reports`)
+
+### Database Schema
+Comprehensive schema supporting:
+- Multi-tenant user management
+- Vehicle fleet tracking
+- Trip and mileage logging
+- Expense categorization
+- Accident documentation
+- Admin configuration
+
+---
+
+**🚀 Ready to revolutionize fleet management? Let's discuss how BizDrive can become the next unicorn in the B2B SaaS space!**
