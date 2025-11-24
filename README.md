@@ -196,10 +196,8 @@ Unlimited: Custom pricing - 200+ vehicles
 - **Technical documentation** and architecture review
 
 ### Contact Information
-- **Email**: investors@bizdrive.com
-- **Phone**: +1 (555) 123-4567
-- **Website**: www.bizdrive.com
-- **LinkedIn**: linkedin.com/company/bizdrive
+- **Email**: info@crashify.com.au
+- **Phone**: 1300655106
 
 ---
 
