@@ -50,9 +50,9 @@ This comprehensive investor package includes everything needed to present BizDri
 ### 📞 Contact Information
 
 Update all documents with your actual contact information:
-- Email: investors@bizdrive.com (or your actual email)
-- Phone: +1 (555) 123-4567 (or your actual phone)
-- Website: www.bizdrive.com (or your actual website)
+- Email: info@crashify.com.au (or your actual email)
+- Phone: 1300655106 (or your actual phone)
+- Website: https://bizdrive.pythonanywhere.com/login
 - GitHub: github.com/yourusername/bizdrive
 
 ### 🎯 Next Steps
